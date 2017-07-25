@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Campfire</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'fire.png' %>
+    <!-- Add icon library -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-toggleable-sm navbar-expand-md navbar-light">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href= "<%= root_path %>" > Campfire <span class="small text-capitalize text-muted"> meeting people made easy </span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <%= nav_link "Contact", new_contact_path %>
+                    <%= nav_link "About Us", about_index_path %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <%= yield %>
+  </body>
+
+  <footer>
+  </footer>
+
+</html>
