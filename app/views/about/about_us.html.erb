@@ -1,3 +1,13 @@
-<div class = "col text-center" style="height:1000px">
-  ABOUT US
+<div class = "row text-center">
+  <div class="col-4">
+      <%= render partial: "about_card", locals: {name: "Mario Font", img: 'headshots/mario.jpg', title: 'CEO/CTO'} %>
+    <%= render partial: "about_card", locals: {name: "Ronaldo Salas", img: 'headshots/ronaldo.jpg', title: 'Head Designer'} %>
+  </div>
+  <div style="padding-top: 90px;" class="col-4">
+    <h1 style="color: #F57421;">The Campfire Team</h1>
+  </div>
+  <div class="col-4">
+    <%= render partial: "about_card", locals: {name: "Michan Walsh", img: 'headshots/michan.jpg', title: 'Head of User Experience'} %>
+    <%= render partial: "about_card", locals: {name: "Carlos Garcia", img: 'headshots/carlos.jpg', title: 'Web Developer'} %>
+  </div>
 </div>

@@ -6,7 +6,7 @@
 
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag 'fire.png' %>
+    <%= favicon_link_tag 'logo_small.png' %>
     <!-- Add icon library -->
   </head>
 
@@ -16,7 +16,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href= "<%= root_path %>" > Campfire <span class="small text-capitalize text-muted"> meeting people made easy </span></a>
+            <a class="navbar-brand" href= "<%= root_path %>" > <img class="logo-img" src="<%= image_path('campfire_logo.png') %>"> <span class="small text-capitalize text-muted"> meeting people made easy </span></a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <%= nav_link "Contact", new_contact_path %>
@@ -31,7 +31,6 @@
     <%= yield %>
   </body>
 
-  <footer>
-  </footer>
+  <%= render partial: "footer", locals: {} %>
 
 </html>
