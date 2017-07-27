@@ -16,11 +16,14 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href= "<%= root_path %>" > <img class="logo-img" src="<%= image_path('campfire_logo.png') %>"> <span class="small text-capitalize text-muted"> meeting people made easy </span></a>
+            <a class="navbar-brand" href= "<%= root_path %>" > <img style="width:30px;" src="<%= image_path('logo_small.png') %>"> <img class="logo-img" src="<%= image_path('campfire_logo_o.png') %>"> <span class="small text-capitalize text-muted"> meeting people made easy </span></a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <%= nav_link "Contact", new_contact_path %>
                     <%= nav_link "About Us", about_index_path %>
+                    <button class="btn blog-btn ml-2">
+                      <span>Blog</span>
+                    </button>
                 </ul>
             </div>
         </div>

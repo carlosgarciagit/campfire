@@ -2,24 +2,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<div class="containder-fluid text-center">
-  <div id="header-image" class="row text-white text-center">
-      <div class="col landing-text">
-        <h1>Campfire</h1>
+<div class="containder-fluid">
+  <div id="header-image" class="row text-white">
+      <div class="col-9 landing-text fade-in">
+        <h1 class="" style="font-size: 48px;">MAKE FRIENDS ANYWHERE IN A FUN, LOW PRESSURE ENVIROMENT WITH CAMPFIRE</h1>
         <h6>In a society so heavily influenced by technology, meeting people face-to-face is becoming increasingly difficult.</h6>
         <h6>Campfire's mission is to break this trend.</h6><br>
 
-        <button class="btn btn-primary mb-4" onclick="smoothScroll(document.getElementById('learn-more'))">
+        <button class="btn btn-primary mb-4" style="width: 200px;height: 50px;" onclick="smoothScroll(document.getElementById('learn-more'))">
           <span>Learn More</span>
         </button><br>
-
-        <img class="mb-3" style="width: 150px;" src="<%= image_path('appstore.svg') %>">
-        <img class="mb-3" style="width: 150px;" src="<%= image_path('googleplay.png') %>"><br>
-
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-snapchat-ghost"></a>
-        <a href="#" class="fa fa-instagram"></a>
 
 
       </div>
@@ -29,7 +21,7 @@
   <div class="learn-more text-center" id="learn-more">
     <div class="row text-center">
       <div class="col mt-5 mb-3">
-          <img class="hvr-grow" src="<%= image_path('logo_small.png') %>"><br><br>
+          <img src="<%= image_path('logo_small.png') %>"><br><br>
           <h2>Join the Campfire!</h2>
           <p>An innovtive, easy, and low-pressure way to bring people together.</p>
       </div>
